@@ -12,9 +12,6 @@
  */
 
 // If the loader is already loaded, just stop.
-self.addEventListener("install", function (event) {
-  console.log("Hello world from the Service Worker 🤙");
-});
 if (!self.define) {
   const singleRequire = name => {
     if (name !== 'require') {
